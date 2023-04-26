@@ -39,4 +39,17 @@ namespace SubastaInmuebles
             return Convert.ToBase64String(hash);
         }
     }
+    class Subasta
+    {
+        public string propiedad { get; set; }
+        public List<Cliente> clientes { get; set; }
+        public int rechazos { get; set; }
+
+        public Subasta(string propiedad, List<Cliente> clientes, int rechazos)
+        {
+            this.propiedad = propiedad;
+            this.clientes = clientes;
+            this.rechazos = rechazos;
+        }
+
 }
